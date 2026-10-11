@@ -34,10 +34,6 @@ jobs:
         with:
           packages: ''
 
-      - name: Install Android SDK Packages
-        run: |
-          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"a
-
       - name: Build Debug APK
         run: gradle --no-daemon assembleDebug
 
